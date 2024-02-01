@@ -2,7 +2,7 @@
 import os
 import re
 import time
-import yaml
+# import yaml
 import streamlit as st
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
@@ -16,7 +16,7 @@ from langchain.llms import OpenAI
 from langchain.memory import ChatMessageHistory, ConversationBufferMemory, ConversationSummaryBufferMemory
 from langchain.prompts import PromptTemplate
 from langchain.vectorstores import Pinecone
-from yaml.loader import SafeLoader
+# from yaml.loader import SafeLoader
 import streamlit_authenticator as stauth
 from streamlit_chat import message
 import base64
@@ -273,13 +273,13 @@ def runapp():
     # st.title("Valiant GPT Chatbot")
     st.title("RVL2: GSA Polibot")
 
-    name, authentication_status, username = authenticator.login(
-        'Login', 'main')
+    # name, authentication_status, username = authenticator.login(
+    #     'Login', 'main')
 
-    if authentication_status:
-        # Display logout button and welcome message
-        authenticator.logout('Logout', 'main')
-        st.write(f'Welcome *{name}*')
+    # if authentication_status:
+    #     # Display logout button and welcome message
+    #     authenticator.logout('Logout', 'main')
+    #     st.write(f'Welcome *{name}*')
 
         if 'chat_history' not in st.session_state:
             st.session_state['chat_history'] = []
