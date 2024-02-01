@@ -201,6 +201,9 @@ def generate_response(topic):
 script_template2 = PromptTemplate(
     template="""
 You are a bot trained on Eric Chinn's resume. You will answer question based on tbe data given to you about his background
+    History: {chat_history}
+    Sources: {context}
+    Topic: {topic}
  """,
     input_variables=["chat_history", "context", "topic"]
 )
