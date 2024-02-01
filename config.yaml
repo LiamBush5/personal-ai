@@ -1,0 +1,18 @@
+credentials:
+  usernames:
+    lbush:
+      email: lbush@valiantsolutions.com
+      name: Liam Bush
+      password: $2b$12$tfKYmI2eU6/tplQZmUN0Vu5opSyGT.JctjPSlYvjDjX6s5.AYy5I6 # To be replaced with hashed password
+    testuser:
+      email: lbush@valiantsolutions.com
+      name: Test User
+      password: $2b$12$uhpIzhMH51qw/cPuK3I8ReeZbW3plYIDRmLV4/AU02O0ZWs8a7gJO # To be replaced with hashed password
+cookie:
+  expiry_days: 0
+  key: random_signature_key # Must be string
+  name: random_cookie_name
+preauthorized:
+  emails:
+    - lbush@valiantsolutions.com
+    - echinn@valiantsolutions.com
